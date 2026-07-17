@@ -1,0 +1,6 @@
+{
+  "name": "ProjectDock",
+  "description": "A personal engineering workspace for planning, building, documenting, and shipping every project from one place.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

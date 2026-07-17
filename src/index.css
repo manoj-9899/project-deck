@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-page-bg: #fdfdfc;
+  --color-surface: #ffffff;
+  --color-muted-surface: #f9f8f6;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #5a5a5a;
+  --color-text-tertiary: #8e8e8e;
+  --color-border-subtle: #f0ede9;
+  --color-border-strong: #d3cfc9;
+  --color-accent-primary: #5f5af6;
+  --color-accent-hover: #4e48ec;
+  --color-accent-soft: #f4f3ff;
+  
+  --color-status-success: #10b981;
+  --color-status-warning: #f59e0b;
+  --color-status-danger: #ef4444;
+  --color-status-info: #3b82f6;
+
+  --shadow-subtle: 0 1px 2px 0 rgba(28, 26, 23, 0.03), 0 1px 3px 1px rgba(28, 26, 23, 0.015);
+  --shadow-elevated: 0 4px 6px -1px rgba(28, 26, 23, 0.04), 0 2px 4px -1px rgba(28, 26, 23, 0.02);
+  --shadow-floating: 0 10px 15px -3px rgba(28, 26, 23, 0.06), 0 4px 6px -4px rgba(28, 26, 23, 0.04);
+
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-pill: 9999px;
+}
+
+/* Global focus styling and background styling */
+body {
+  background-color: var(--color-page-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbars for developer precision aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
